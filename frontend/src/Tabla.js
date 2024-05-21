@@ -1,6 +1,6 @@
 function Tabla(props) {
   return (
-    <table class="table table-hover">
+    <table className="table table-hover">
       <thead>
         <tr>
           <th scope="col">Angol</th>
@@ -10,11 +10,11 @@ function Tabla(props) {
       </thead>
       <tbody>
         {props.selectedTema == "Válassz témát" || props.selectedTema == null ? (
-          <p></p>
+          <tr/>
         ) : (
           props.szurtSzavak.map((element, key) => {
             return (
-              <tr>
+              <tr key={key}>
                 <td>{element.angol}</td>
                 <td>
                   <input

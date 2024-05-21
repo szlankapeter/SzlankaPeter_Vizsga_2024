@@ -1,6 +1,6 @@
 function TemaSelect(props) {
   return (
-    <select class="form-select" onChange={props.getTemaValue}>
+    <select className="form-select" onChange={props.getTemaValue}>
       <option>Válassz témát</option>
       {props.temak.map((element, key) => {
         return (
